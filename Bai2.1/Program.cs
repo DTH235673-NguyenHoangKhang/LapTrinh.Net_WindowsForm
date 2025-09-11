@@ -17,6 +17,7 @@ namespace BuoiTH2_Bai2._1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmChuongTrinhDonGian());
+
         }
     }
 }
