@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{61E9B85B-8F4E-43AD-902F-2FD5357EF4C3}</ProjectGuid>
+    <ProjectGuid>{B2F91458-6DF1-4525-BCC3-6292594A5B45}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BuoiTH3_Bai4</RootNamespace>
-    <AssemblyName>BuoiTH3_Bai4</AssemblyName>
+    <RootNamespace>BuoiTH3_Bai5</RootNamespace>
+    <AssemblyName>BuoiTH3_Bai5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
