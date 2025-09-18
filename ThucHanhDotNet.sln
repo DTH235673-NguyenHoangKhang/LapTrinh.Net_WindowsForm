@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuoiTH3_Bai4", "BuoiTH3_Bai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuoiTH3_Bai5", "BuoiTH3_Bai5\BuoiTH3_Bai5.csproj", "{B2F91458-6DF1-4525-BCC3-6292594A5B45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuoiTH3_Bai6", "BuoiTH3_Bai6\BuoiTH3_Bai6.csproj", "{B79FB4C9-B7BA-4784-B984-90F8DB9A08E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,10 @@ Global
 		{B2F91458-6DF1-4525-BCC3-6292594A5B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2F91458-6DF1-4525-BCC3-6292594A5B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2F91458-6DF1-4525-BCC3-6292594A5B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79FB4C9-B7BA-4784-B984-90F8DB9A08E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79FB4C9-B7BA-4784-B984-90F8DB9A08E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79FB4C9-B7BA-4784-B984-90F8DB9A08E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79FB4C9-B7BA-4784-B984-90F8DB9A08E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
