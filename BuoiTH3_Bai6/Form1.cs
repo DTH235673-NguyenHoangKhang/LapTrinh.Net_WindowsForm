@@ -29,13 +29,49 @@ namespace BuoiTH3_Bai6
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtKq.Text=lstKq.SelectedItem.ToString();
+            
         }
 
         private void btnMauChu_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.ShowDialog();
+            ColorDialog chonmau= new ColorDialog();
+            if (chonmau.ShowDialog() == DialogResult.OK)
+            {
+                txtKq.ForeColor = chonmau.Color;
+                
+            }
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lstKq_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(lstKq.SelectedItem != null)
+                txtKq.Text = lstKq.SelectedItem.ToString();
+            else
+                txtKq.Text = "";
+
+        }
+
+        private void btnMauNen_Click(object sender, EventArgs e)
+        {
+            ColorDialog maunen = new ColorDialog();
+            if (maunen.ShowDialog() == DialogResult.OK)
+            {
+                txtKq.BackColor = maunen.Color;
+            }
+        }
+
+        private void btnPhong_Click(object sender, EventArgs e)
+        {
+            FontDialog ft = new FontDialog();
+            if (ft.ShowDialog() == DialogResult.OK)
+            {
+                txtKq.Font = ft.Font;
+            }
         }
     }
 }
