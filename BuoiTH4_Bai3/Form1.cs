@@ -56,13 +56,19 @@ namespace BuoiTH4_Bai3
         private void btnTong_Click(object sender, EventArgs e)
         {
             DialogResult ktra;
-            MessageBox.Show("Các phần tử của mảng: " + InMang() + ", bạn có muốn tính tổng mảng không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            ktra=MessageBox.Show("Các phần tử của mảng: " + InMang() + ", bạn có muốn tính tổng mảng không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (ktra == DialogResult.OK)
             {
-
+                Form2 f2=new Form2(a);
+                f2.ShowDialog();
             } 
                 
 
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
