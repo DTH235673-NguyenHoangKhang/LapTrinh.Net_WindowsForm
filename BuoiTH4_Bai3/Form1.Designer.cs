@@ -84,6 +84,7 @@
             this.btnMax.TabIndex = 6;
             this.btnMax.Text = "Số lớn nhất";
             this.btnMax.UseVisualStyleBackColor = true;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
             // btnTong
             // 

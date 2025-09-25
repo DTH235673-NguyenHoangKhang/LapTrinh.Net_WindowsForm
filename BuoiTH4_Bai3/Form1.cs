@@ -70,5 +70,16 @@ namespace BuoiTH4_Bai3
         {
             this.Close();
         }
+
+        private void btnMax_Click(object sender, EventArgs e)
+        {
+            DialogResult ktra;
+            ktra = MessageBox.Show("Các phần tử của mảng: " + InMang() + ", bạn có muốn tìm giá trị lớn nhất không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (ktra == DialogResult.OK)
+            {
+                Form3 f3 = new Form3(a);
+                f3.ShowDialog();
+            }
+        }
     }
 }

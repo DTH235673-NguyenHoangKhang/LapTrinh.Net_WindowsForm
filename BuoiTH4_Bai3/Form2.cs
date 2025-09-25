@@ -18,7 +18,7 @@ namespace BuoiTH4_Bai3
             InitializeComponent();
             b = new int[a.Length];
             Array.Copy(a, b, a.Length);
-            lblKQ.Text = "Tổng mảng = " + TongMang().ToString();
+            lblKQ.Text = "Tổng các phần tử trong mảng = " + TongMang().ToString();
         }
 
         private void Form2_Load(object sender, EventArgs e)
