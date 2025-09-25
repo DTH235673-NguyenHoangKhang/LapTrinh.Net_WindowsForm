@@ -57,7 +57,12 @@ namespace BuoiTH4_Bai3
         {
             DialogResult ktra;
             MessageBox.Show("Các phần tử của mảng: " + InMang() + ", bạn có muốn tính tổng mảng không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (ktra == DialogResult.OK) {
+            if (ktra == DialogResult.OK)
+            {
+
+            } 
+                
+
         }
     }
 }

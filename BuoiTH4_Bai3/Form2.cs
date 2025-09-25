@@ -20,7 +20,9 @@ namespace BuoiTH4_Bai3
         private void Form2_Load(object sender, EventArgs e)
         {
             int[] b = new int[10];
-            for
+            
+
+
         }
     }
 }
