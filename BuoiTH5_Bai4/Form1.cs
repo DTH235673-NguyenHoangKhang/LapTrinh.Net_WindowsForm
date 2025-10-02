@@ -130,54 +130,60 @@ namespace BuoiTH5_Bai4
         }
 
 
-        private void rdoHT_CheckedChanged(object sender, EventArgs e)
+       
+
+        private void rdoHT_CheckedChanged_1(object sender, EventArgs e)
         {
             if (rdoHT.Checked == true)
             {
                 grbHT.Visible = true;
-                grbHV.Visible = false;
-                grbHTG.Visible = false;
-                grbHCN.Visible = false;
+            }
+            else
+            {
+                grbHT.Visible = false;
             }
 
         }
 
-        private void rdoHV_CheckedChanged(object sender, EventArgs e)
+        private void rdoHV_CheckedChanged_1(object sender, EventArgs e)
         {
             if (rdoHV.Checked == true)
             {
+                grbHV.Location=grbHT.Location;
                 grbHV.Visible = true;
-                grbHT.Visible = false;
-               
-                grbHTG.Visible = false;
-                grbHCN.Visible = false;
             }
-
+            else
+            {
+                grbHV.Visible = false;
+            }
         }
 
-        private void rdoHTG_CheckedChanged(object sender, EventArgs e)
+        private void rdoHTG_CheckedChanged_1(object sender, EventArgs e)
         {
             if (rdoHTG.Checked == true)
             {
+                grbHTG.Location = grbHT.Location;
                 grbHTG.Visible = true;
-                grbHT.Visible = false;
-                grbHV.Visible = false;
-                
-                grbHCN.Visible = false;
+
+            }
+            else
+            {
+                grbHTG.Visible = false;
             }
         }
 
-        private void rdoHCN_CheckedChanged(object sender, EventArgs e)
+        private void rdoHCN_CheckedChanged_1(object sender, EventArgs e)
         {
+
             if (rdoHCN.Checked == true)
             {
+                grbHCN.Location = grbHT.Location;
                 grbHCN.Visible = true;
-                grbHT.Visible = false;
-                grbHV.Visible = false;
-                grbHTG.Visible = false;
-               
             }
-
+            else
+            {
+                grbHCN.Visible = false;
+            }
         }
     }
 }
