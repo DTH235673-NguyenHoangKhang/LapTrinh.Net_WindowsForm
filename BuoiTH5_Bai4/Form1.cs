@@ -15,29 +15,7 @@ namespace BuoiTH5_Bai4
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void rdoHT_CheckedChanged(object sender, EventArgs e)
-        {
-            grbHT.Visible = true;
-
-        }
-
-        private void rdoHV_CheckedChanged(object sender, EventArgs e)
-        {
-            grbHV.Visible = true;
-        }
-
-        private void rdoHTG_CheckedChanged(object sender, EventArgs e)
-        {
-            grbHTG.Visible = true;
-        }
-
-        private void rdoHCN_CheckedChanged(object sender, EventArgs e)
-        {
-            grbHCN.Visible = true;
-        }
-
+        }  
         private void btnThucHien_Click(object sender, EventArgs e)
         {
             if (rdoHT.Checked)
@@ -82,11 +60,124 @@ namespace BuoiTH5_Bai4
                 else
                 {
                     txtCVTG.Text=(a+b+c).ToString();
-                    double p=Convert.ToDouble(txtCVTG.Text);
-                    txtDTTG.Text=(Math.Sqrt(a*).ToString();
+                    double p=Convert.ToDouble((a+b+c)/2);
+                    txtDTTG.Text = (Math.Sqrt(p * (p - a) * (p - b) * (p - c))).ToString();
+
                 }
 
-            }    
+            }
+            else
+            {
+                int dai = int.Parse(txtDai.Text);
+                int rong = int.Parse(txtRong.Text);
+                if ((dai <= 0) || (rong <= 0))
+                {
+                    MessageBox.Show("Chiều dài và chiều rộng phải lớn hơn 0!", "Thông báo");
+                }
+                else
+                {
+                    txtCVHCN.Text = (2 * (dai + rong)).ToString();
+                    txtDTHCN.Text = (dai * rong).ToString();
+                }
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            grbHT.Visible = false;
+            grbHV.Visible = false;
+            grbHTG.Visible = false;
+            grbHCN.Visible = false;
+            rdoHT.Checked = false;
+            rdoHV.Checked = false;
+            rdoHTG.Checked = false;
+            rdoHCN.Checked = false;
+            txtR.Clear();
+            txtCV.Clear();
+            txtDT.Clear();
+            txtCanh.Clear();
+            txtCVHV.Clear();
+            txtDTHV.Clear();
+            txtCVTG.Clear();
+            txtDTTG.Clear();
+            txtCanhA.Clear();
+            txtCanhB.Clear();
+            txtCanhC.Clear();
+            txtDai.Clear();
+            txtRong.Clear();
+            txtCVHCN.Clear();
+            txtDTHCN.Clear();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult traloi;
+            traloi = MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Trả lời", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (traloi == DialogResult.Yes) this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            grbHT.Visible = false;
+            grbHV.Visible = false;
+            grbHTG.Visible = false;
+            grbHCN.Visible = false;
+            rdoHT.Checked = false;
+            rdoHV.Checked = false;
+            rdoHTG.Checked = false;
+            rdoHCN.Checked = false;
+
+        }
+
+
+        private void rdoHT_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoHT.Checked == true)
+            {
+                grbHT.Visible = true;
+                grbHV.Visible = false;
+                grbHTG.Visible = false;
+                grbHCN.Visible = false;
+            }
+
+        }
+
+        private void rdoHV_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoHV.Checked == true)
+            {
+                grbHV.Visible = true;
+                grbHT.Visible = false;
+               
+                grbHTG.Visible = false;
+                grbHCN.Visible = false;
+            }
+
+        }
+
+        private void rdoHTG_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoHTG.Checked == true)
+            {
+                grbHTG.Visible = true;
+                grbHT.Visible = false;
+                grbHV.Visible = false;
+                
+                grbHCN.Visible = false;
+            }
+        }
+
+        private void rdoHCN_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoHCN.Checked == true)
+            {
+                grbHCN.Visible = true;
+                grbHT.Visible = false;
+                grbHV.Visible = false;
+                grbHTG.Visible = false;
+               
+            }
+
         }
     }
 }
