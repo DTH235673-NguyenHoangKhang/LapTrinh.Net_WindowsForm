@@ -16,5 +16,6 @@ namespace BuoiTH1_Bai2
             Console.WriteLine("Số lớn nhất trong {0} vừa nhập là {1} ", n, sln.TimMax(n));
             Console.ReadLine();
         }
+
     }
 }

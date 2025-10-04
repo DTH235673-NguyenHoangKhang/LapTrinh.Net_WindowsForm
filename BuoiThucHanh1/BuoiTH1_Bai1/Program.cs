@@ -21,6 +21,7 @@ namespace BuoiTH1_Bai1
             max = sln.TimMax(a, b, c);
             Console.WriteLine("Số lớn nhất trong 3 số {0}, {1} và {2} là {3}", a, b, c, max);
             Console.ReadLine();
+
         }
     }
 }
