@@ -14,5 +14,6 @@ class Program
         pt.TinhNghiem();
         pt.output();
         Console.ReadLine();
+
     }
 }

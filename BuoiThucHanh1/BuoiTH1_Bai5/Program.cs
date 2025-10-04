@@ -22,6 +22,7 @@ class Program
         {
             _arrStudent[i].xuat();
         }
+
         Console.ReadLine();
     }
 }

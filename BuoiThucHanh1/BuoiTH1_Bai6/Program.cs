@@ -25,5 +25,6 @@ class Program
             _arrEmployee[i].Display();
         }
         Console.ReadLine();
+
     }
 }
