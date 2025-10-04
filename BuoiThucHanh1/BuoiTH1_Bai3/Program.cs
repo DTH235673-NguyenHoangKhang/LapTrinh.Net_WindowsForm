@@ -15,5 +15,6 @@ namespace BuoiTH1_Bai3
             Console.WriteLine("Giai thừa của {0} là {1}", n, gtn.TinhGiaiThuaN(n));
             Console.ReadLine();
         }
+
     }
 }
