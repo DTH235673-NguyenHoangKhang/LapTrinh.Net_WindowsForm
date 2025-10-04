@@ -18,6 +18,7 @@ namespace Bai2._10
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
+
         }
     }
 }
