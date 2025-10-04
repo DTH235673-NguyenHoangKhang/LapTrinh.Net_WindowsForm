@@ -17,6 +17,7 @@ namespace BuoiTH3_Bai7
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
         }
     }
 }
