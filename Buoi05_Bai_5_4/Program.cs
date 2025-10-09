@@ -18,5 +18,6 @@ namespace BuoiTH5_Bai4
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
     }
 }
