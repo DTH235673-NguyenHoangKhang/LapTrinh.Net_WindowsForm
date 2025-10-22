@@ -12,6 +12,7 @@ namespace Buoi10
 {
     public partial class QuanLyNhanVien : Form
     {
+
         public QuanLyNhanVien()
         {
             InitializeComponent();
