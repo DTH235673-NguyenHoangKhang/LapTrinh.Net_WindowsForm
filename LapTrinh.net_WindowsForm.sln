@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buoi07_Bai_7_4", "Buoi07_Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buoi07_Bai_7_5", "Buoi07_Bai_7_5\Buoi07_Bai_7_5.csproj", "{E48F3405-A018-47F7-BC89-57E30D88A6F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buoi08", "Buoi08\Buoi08.csproj", "{628D2841-BBF0-4BCD-85C8-6FE6C803EE8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -309,6 +311,10 @@ Global
 		{E48F3405-A018-47F7-BC89-57E30D88A6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E48F3405-A018-47F7-BC89-57E30D88A6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E48F3405-A018-47F7-BC89-57E30D88A6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628D2841-BBF0-4BCD-85C8-6FE6C803EE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628D2841-BBF0-4BCD-85C8-6FE6C803EE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628D2841-BBF0-4BCD-85C8-6FE6C803EE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628D2841-BBF0-4BCD-85C8-6FE6C803EE8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
